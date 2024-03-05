@@ -1,4 +1,4 @@
-package com.matheus.servicex.Exception;
+package com.matheus.servicex.exception;
 
 public class EntidadeNaoEncontradaException extends RuntimeException {
     public EntidadeNaoEncontradaException(String message) {
