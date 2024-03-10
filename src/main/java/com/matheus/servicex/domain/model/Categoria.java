@@ -9,7 +9,7 @@ import java.util.List;
 
 @Entity
 @Table(
-        name = "categorias"
+        name = "categoria"
 )
 @Data
 @EqualsAndHashCode(
