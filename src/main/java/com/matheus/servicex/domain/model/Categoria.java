@@ -1,4 +1,4 @@
-package com.matheus.servicex.model;
+package com.matheus.servicex.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -25,7 +25,10 @@ public class Categoria {
     @EqualsAndHashCode.Include
     private Integer id;
 
-    @Column(name = "nome")
+    @Column(
+            name = "nome",
+            nullable = false
+    )
     private String nome;
 
     @OneToMany(

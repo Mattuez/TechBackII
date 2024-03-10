@@ -1,4 +1,4 @@
-package com.matheus.servicex.model;
+package com.matheus.servicex.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

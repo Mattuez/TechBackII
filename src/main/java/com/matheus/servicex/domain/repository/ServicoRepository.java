@@ -1,6 +1,6 @@
-package com.matheus.servicex.repository;
+package com.matheus.servicex.domain.repository;
 
-import com.matheus.servicex.model.Servico;
+import com.matheus.servicex.domain.model.Servico;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,8 +1,8 @@
-package com.matheus.servicex.service;
+package com.matheus.servicex.domain.service;
 
-import com.matheus.servicex.exception.CategoriaNaoEncontradaException;
-import com.matheus.servicex.model.Categoria;
-import com.matheus.servicex.repository.CategoriaRepository;
+import com.matheus.servicex.domain.exception.CategoriaNaoEncontradaException;
+import com.matheus.servicex.domain.repository.CategoriaRepository;
+import com.matheus.servicex.domain.model.Categoria;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

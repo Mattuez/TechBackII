@@ -1,4 +1,4 @@
-package com.matheus.servicex.exception;
+package com.matheus.servicex.domain.exception;
 
 public class CategoriaNaoEncontradaException extends EntidadeNaoEncontradaException{
     public CategoriaNaoEncontradaException(String message) {
