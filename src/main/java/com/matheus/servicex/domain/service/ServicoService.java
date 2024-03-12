@@ -19,23 +19,23 @@ public class ServicoService {
         this.servicoRepository = servicoRepository;
     }
 
-    private List<Servico> listarServicos() {
+    public List<Servico> listarServicos() {
         return servicoRepository.findAll();
     }
 
-    private Servico procurarServico(Integer servicoId) {
+    public Servico procurarServico(Integer servicoId) {
         return servicoRepository.findById(servicoId)
                 .orElseThrow(() -> new ServicoNaoEncontradoException(servicoId));
     }
 
-    private Servico salvarServico(Servico servico) {
+    public Servico salvarServico(Servico servico) {
         Categoria categoria = categoriaService.procurarCategoria(servico.getCategoria().getId());
         servico.setCategoria(categoria);
 
         return servicoRepository.save(servico);
     }
 
-    private void deletarServico(Integer categoriaId) {
+    public void deletarServico(Integer categoriaId) {
         Servico servico = procurarServico(categoriaId);
 
         servicoRepository.delete(servico);

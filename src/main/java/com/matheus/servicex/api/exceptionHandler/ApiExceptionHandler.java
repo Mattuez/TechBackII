@@ -46,7 +46,7 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         return handleExceptionInternal(ex, error, new HttpHeaders(), status, request);
     }
 
-    @ExceptionHandler(CategoriaNaoEncontradaException.class)
+    @ExceptionHandler(EntidadeNaoEncontradaException.class)
     private ResponseEntity<Object> handleEntidadeNaoEncontradaException(EntidadeNaoEncontradaException ex,
                                                                         WebRequest request) {
         HttpStatus status = HttpStatus.NOT_FOUND;

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(
-        name = "servicos"
+        name = "servico"
 )
 @Data
 @EqualsAndHashCode(
