@@ -1,9 +1,7 @@
 package com.matheus.servicex.domain.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
@@ -15,7 +13,6 @@ import java.util.List;
 @EqualsAndHashCode(
         onlyExplicitlyIncluded = true
 )
-@NoArgsConstructor
 public class Categoria {
 
     @Id

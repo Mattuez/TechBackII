@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(
         onlyExplicitlyIncluded = true
 )
-@NoArgsConstructor
 public class Servico {
 
     @Id
