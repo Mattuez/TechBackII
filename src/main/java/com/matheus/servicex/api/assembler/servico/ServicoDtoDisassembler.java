@@ -22,6 +22,9 @@ public class ServicoDtoDisassembler {
     }
 
     public void copyToEntityObject(ServicoInputDto source, Servico destination) {
+
+        destination.setCategoria(new Categoria());
+
         modelMapper.map(source, destination);
     }
 }
