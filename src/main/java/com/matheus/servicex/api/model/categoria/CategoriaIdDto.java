@@ -1,5 +1,6 @@
 package com.matheus.servicex.api.model.categoria;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,5 +8,6 @@ import lombok.Setter;
 @Setter
 public class CategoriaIdDto {
 
+    @NotNull
     private Integer id;
 }
