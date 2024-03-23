@@ -12,7 +12,7 @@ public enum ApiErrorType {
     private final String title;
 
     ApiErrorType(String path, String title) {
-        this.uri = "https://autumnflix.com.br" + path;
+        this.uri = "https://servicex.com.br" + path;
         this.title = title;
     }
 }

@@ -54,7 +54,8 @@ public class CategoriaController {
         return categoriaDtoAssembler.toDto(categoriaService.salvarCategoria(categoriaExistente));
     }
 
-    @DeleteMapping("categoriaId")
+    @DeleteMapping("/{categoriaId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluirCategoria(@PathVariable("categoriaId") Integer categoriaId) {
         categoriaService.deletarCategoria(categoriaId);
     }
